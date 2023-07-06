@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
+
+// let inputTextLength = 0;
 function TodoInput(props) {
   const [inputText, setInputText] = useState("");
-
+  
   return (
     <div className="input-container">
       <input

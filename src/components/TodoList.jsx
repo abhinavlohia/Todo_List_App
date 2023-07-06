@@ -1,6 +1,9 @@
 import React from "react";
 
 function TodoList(props) {
+  if (!props.item || props.item.trim() === "") {
+    return null;
+  }
   return (
     <li className="list-item">
       {props.item}
